@@ -12,13 +12,13 @@
     "interfaceComponents": {
         "inputPorts": [
             {
-                "description": "TODO",
+                "description": "ingest the customer data from source system's transactional db",
                 "$ref": "ports/dvdrental-iport.json"
             }
         ],
         "outputPorts": [
             {
-                "description": "TODO",
+                "description": "Expose the customer list through a datastore API",
                 "$ref": "ports/customers-oport.json"
             }
         ]
