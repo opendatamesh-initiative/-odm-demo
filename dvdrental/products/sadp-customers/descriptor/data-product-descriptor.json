@@ -13,13 +13,19 @@
         "inputPorts": [
             {
                 "description": "ingest the customer data from source system's transactional db",
-                "$ref": "ports/dvdrental-iport.json"
+                "$ref": "ports/input/dvdrental-iport.json"
             }
         ],
         "outputPorts": [
             {
                 "description": "Expose the customer list through a datastore API",
-                "$ref": "ports/customers-oport.json"
+                "$ref": "ports/output/customers-oport.json"
+            }
+        ],
+        "observabilityPorts": [
+            {
+                "description": "This port exposes data product health metrics",
+                "$ref": "ports/observability/health-obport.json"
             }
         ]
     }
