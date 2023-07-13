@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package com.dvdrental.crm;
+
+import "schemata/protobuf/schemata.proto";
+
+option java_package = "com.dvdrental.schema.crm.customers";
+option java_outer_classname = "Customer";
+
+message TripStatus {
+  option(org.schemata.schema.message_core).description = "sustomers table";
+  option(org.schemata.schema.message_core).comment = "The table that store the customers list";
+  option(org.schemata.schema.schema_type) = ENTITY;
+
+  int32 id = 1 [
+    (org.schemata.schema.field_core).description = "Customer identifier"
+    , (org.schemata.schema.is_primary_key) = true
+  ];
+
+  string name = 2 [
+    (org.schemata.schema.field_core).description = "Fullname"
+  ];
+
+  string address = 3 [
+    (org.schemata.schema.field_core).description = "Residential address"
+  ];
+ 
+  string zip_code = 4 [
+    (org.schemata.schema.field_core).description = "Postal code" 
+    , (org.schemata.schema.product_type) = "ISO19160-4:2017"
+  ];
+
+  string phone = 5 [
+    (org.schemata.schema.field_core).description = "Primary phine number"
+    , (org.schemata.schema.field_core).is_classified = true
+    , (org.schemata.schema.field_core).classification_level = "restricted"
+  ];
+
+  string city = 6 [
+    (org.schemata.schema.field_core).description = "Residential city"
+  ];
+
+  string country = 7 [
+    (org.schemata.schema.field_core).description = "Residential country"
+  ];
+
+  string notes = 8 [
+    (org.schemata.schema.field_core).description = "Extra info on customer"
+    , (org.schemata.schema.field_core).comment = "It's equal to active if the customer did at leat one rental in the past 6 months"
+  ];
+
+  string sid = 9 [
+    (org.schemata.schema.field_core).description = "Identifier of the preferred store"
+  ];
+}

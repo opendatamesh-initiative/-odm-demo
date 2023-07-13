@@ -1,0 +1,26 @@
+{
+    "dataProductDescriptor": "1.0.0",
+    "info": {
+        "name": "customers",
+        "version": "1.0.0",
+        "domain": "Customer Management",
+        "owner": {
+            "id": "john.doe@dvdrental.com",
+            "name": "John Doe"
+        }
+    },
+    "interfaceComponents": {
+        "inputPorts": [
+            {
+                "description": "TODO",
+                "$ref": "ports/dvdrental-iport.json"
+            }
+        ],
+        "outputPorts": [
+            {
+                "description": "TODO",
+                "$ref": "ports/customers-oport.json"
+            }
+        ]
+    }
+}
