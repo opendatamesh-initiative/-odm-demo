@@ -3,7 +3,7 @@ DVD Reantal Demo
 
 ## Overview
 
-![DVD Reantal Demo Architecture](dvdrental_architecture.png)
+![DVD Reantal Demo Architecture](docs/dvdrental_architecture.png)
 
 ## Building docker image
 First of all we have to build docker image. We can do it by moving in `docker` folder and execute:
