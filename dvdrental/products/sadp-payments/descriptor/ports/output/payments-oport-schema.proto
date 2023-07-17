@@ -7,8 +7,8 @@ import "schemata/protobuf/schemata.proto";
 option java_package = "com.dvdrental.schema.crm.payments";
 option java_outer_classname = "Payments";
 
-message TripStatus {
-  option(org.schemata.schema.message_core).description = "paymemts table";
+message Payments {
+  option(org.schemata.schema.message_core).description = "Payments table";
   option(org.schemata.schema.message_core).comment = "The table that store the payment transactions";
   option(org.schemata.schema.schema_type) = ENTITY;
 

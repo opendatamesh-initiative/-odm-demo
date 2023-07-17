@@ -29,7 +29,7 @@
         "schemaName": "dp_customers",
         "tables": [
             {
-                "name": "customers",
+                "name": "dp_customers",
                 "specification": "schemata",
                 "specificationVersion": 1,
                 "definition": {

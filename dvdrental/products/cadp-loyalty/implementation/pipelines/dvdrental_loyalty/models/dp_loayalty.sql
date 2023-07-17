@@ -32,14 +32,14 @@ from
 			tot_payment_number) as rfm_frequency,
 			ntile(4) over (
 		order by
-			tot_payment_ammount) as rfm_monetary
+			tot_payment_amount) as rfm_monetary
 		from
 			(
 			select
 				customer_id,
 				MAX(payment_date) as last_payment_date,
 				COUNT(*) as tot_payment_number,
-				SUM(amount) as tot_payment_ammount
+				SUM(amount) as tot_payment_amount
 			from
 				dp_payments.dp_payments
 			group by

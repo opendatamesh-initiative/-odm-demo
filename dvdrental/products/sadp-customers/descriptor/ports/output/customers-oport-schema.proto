@@ -8,7 +8,7 @@ option java_package = "com.dvdrental.schema.crm.customers";
 option java_outer_classname = "Customer";
 
 message TripStatus {
-  option(org.schemata.schema.message_core).description = "sustomers table";
+  option(org.schemata.schema.message_core).description = "Customers table";
   option(org.schemata.schema.message_core).comment = "The table that store the customers list";
   option(org.schemata.schema.schema_type) = ENTITY;
 

@@ -1,15 +1,15 @@
 {
     "datastoreapi": "1.0.0",
     "info": {
-        "title": "Payments",
-        "summary": "This API exposes the payment transactions of DVD Renatal",
+        "title": "RFM",
+        "summary": "This API exposes the RFM metrics calculated over dvdrental customer base",
         "version": "1.0.0",
-        "datastoreName": "payments"
+        "datastoreName": "rfm"
     },
     "services": {
         "development": {
             "serverInfo": {
-                "$ref": "#components.serverInfo.paymentsStoreServerInfo"
+                "$ref": "#components.serverInfo.rfmStoreServerInfo"
             },
             "serverVariables": {
                 "host": "localhost"
@@ -17,7 +17,7 @@
         },
         "production": {
             "serverInfo": {
-                "$ref": "#components.serverInfo.paymentsStoreServerInfo"
+                "$ref": "#components.serverInfo.rfmStoreServerInfo"
             },
             "serverVariables": {
                 "host": "localhost"
@@ -26,15 +26,15 @@
     },
     "schema": {
         "databaseName": "dvdrental",
-        "schemaName": "dp_payments",
+        "schemaName": "dp_ployalty",
         "tables": [
             {
-                "name": "dp_payments",
+                "name": "dp_loyalty",
                 "specification": "schemata",
                 "specificationVersion": 1,
                 "definition": {
                     "mediaType": "application/x-protobuf",
-                    "$ref": "payments-oport-schema.proto"
+                    "$ref": "rfm-oport-schema.proto"
                 }
                
             }

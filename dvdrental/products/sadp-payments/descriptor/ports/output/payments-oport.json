@@ -7,18 +7,18 @@
         "platform": "docker:postgres:15.3",
         "serviceType": "datastore-services",
         "api": {
-            "name": "customerApi",
+            "name": "paymentsApi",
             "version": "1.0.0",
             "specification": "datastoreapi",
-            "specificationVersion": "1.0.0",
+            "specificationVersion": "1.0.0-DRAFT",
             "definition": {
                 "mediaType": "text/json",
                 "$ref": "payments-oport-api.json"
             },
             "externalDocs": {
-                "description": "The OpenAPI v3.1.0 specification used to define the API of this port",
+                "description": "The DatastoreAPI v1.0.0-DRAFT specification used to define the API of this port",
                 "mediaType": "text/html",
-                "$href": "https://spec.openapis.org/oas/v3.1.0"
+                "$href": "https://github.com/opendatamesh-initiative/odm-specification-datastoreapi/blob/main/versions/1.0.0-DRAFT.md"
             }
         },
         "deprecationPolicy": {

@@ -1,19 +1,19 @@
 {
-    "name": "customers",
-    "displayName": "Customers",
-    "description": "DVD Rental's customers",
+    "name": "rfm",
+    "displayName": "RFM",
+    "description": "RFM Metrics",
     "version": "1.0.0",
     "promises": {
         "platform": "docker:postgres:15.3",
         "serviceType": "datastore-services",
         "api": {
-            "name": "customersApi",
+            "name": "rfmApi",
             "version": "1.0.0",
             "specification": "datastoreapi",
             "specificationVersion": "1.0.0-DRAFT",
             "definition": {
                 "mediaType": "text/json",
-                "$ref": "customers-oport-api.json"
+                "$ref": "rfm-oport-api.json"
             },
             "externalDocs": {
                 "description": "The DatastoreAPI v1.0.0-DRAFT specification used to define the API of this port",
