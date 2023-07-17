@@ -22,4 +22,34 @@ docker run -p 5433:5432 --name odm-demo-dvdrental --net host  dvdrental
 ```
 Docker will run container with name "odm-demo-dvdrental", based on image "dvdrental" and it will expose containers port 5432 on localhost port 5433.
 
+# Create product tables
+To create the tables exposed by the implemented data products we move in the pipeline folder of the product and execute the command `dbt run` like in the following example
+
+```docker
+cd ./products/sadp-loyacustomerslty/implementation/pipelines/dvdrental_customers
+dbt run
+```
+
+All dbt models use the profile `dvdrental` defined as follow...
+
+```yaml
+dvdrental:
+  outputs:
+
+    prod:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: dvdrental
+      schema: public
+
+    
+
+  target: prod
+```
+
+To succesfully execute `dbt run` command we must add it to our `profiles.yml` file
 
