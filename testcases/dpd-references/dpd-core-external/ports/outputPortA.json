@@ -10,5 +10,6 @@
         "api": {
             "$ref": "restApi2.json"
         }
-    }
+    },
+    "x-prop":"x-prop-value"
 }

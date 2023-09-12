@@ -9,7 +9,8 @@
         "owner": {
             "id": "john.doe@company-xyz.com",
             "name": "John Doe"
-        }
+        },
+        "x-prop":"x-prop-value"
     },
     "interfaceComponents": {
         "inputPorts": [
@@ -36,7 +37,8 @@
                     "stagesToSkip": [
                         "Deploy"
                     ]
-                }
+                },
+                "x-prop":"x-prop-value"
             },
             "prod": {
                 "service": {
@@ -47,9 +49,12 @@
                 },
                 "configurations": {
                     "stagesToSkip": []
-                }
+                },
+                "x-prop":"x-prop-value"
             },
-            "deprecated": {}
+            "deprecated": {
+                "x-prop":"x-prop-value"
+            }
         },
         "applicationComponents": [
             {
@@ -75,7 +80,8 @@
                 "dependsOn": [
                     "urn:org.opendatamesh:dataproducts:dpdCore:1.0.0:infrastructures:infraA:1.1.0"
                 ],
-                "componentGroup": "gruppoB"
+                "componentGroup": "gruppoB",
+                "x-prop":"x-prop-value"
             }
         },
         "infrastructuralComponents": {
@@ -86,7 +92,8 @@
                 "description": "Infrastructure component A of data product",
                 "platform": "platformX",
                 "infrastructureType": "storage-resource",
-                "componentGroup": "gruppoC"
+                "componentGroup": "gruppoC",
+                "x-prop":"x-prop-value"
             }
         },
         "apis": {
@@ -98,7 +105,8 @@
                 "specificationVersion": "1.0.0",
                 "definition": {
                     "$ref": "apis/restApi1Def.json"
-                }
+                },
+                "x-prop":"x-prop-value"
             },
             "restApi2" : {
                 "name": "restApi2",
@@ -108,7 +116,8 @@
                 "specificationVersion": "1.0.0",
                 "definition": {
                     "$ref": "apis/restApi2Def.json"
-                }
+                },
+                "x-prop":"x-prop-value"
             }
 
         },
@@ -123,7 +132,8 @@
                     "project": "opendatamesh",
                     "pipelineId": "3",
                     "branch": "main"
-                }
+                },
+                "x-prop":"x-prop-value"
             }
         }
     }

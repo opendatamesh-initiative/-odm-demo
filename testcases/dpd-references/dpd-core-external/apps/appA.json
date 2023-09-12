@@ -8,5 +8,6 @@
     "dependsOn": [
       "urn:org.opendatamesh:dataproducts:dpdCore:1.0.0:infrastructures:infraA:1.1.0"
     ],
-    "componentGroup": "gruppoB"
+    "componentGroup": "gruppoB",
+    "x-prop":"x-prop-value"
   }

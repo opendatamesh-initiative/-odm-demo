@@ -10,5 +10,6 @@
         "api": {
             "$ref": "#components/apis/restApi2"
         }
-    }
+    },
+    "x-prop":"x-prop-value"
 }

@@ -6,5 +6,6 @@
     "specificationVersion": "1.0.0",
     "definition": {
         "$ref": "../apis/restApi2Def.json"
-    }
+    },
+    "x-prop":"x-prop-value"
 }
