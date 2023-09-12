@@ -1,10 +1,11 @@
 with customers as (
 
    SELECT cu.customer_id AS id,
-    (cu.first_name::text || ' '::text) || cu.last_name::text AS name,
+    cu.first_name,
+    cu.last_name,
+    a.phone,
     a.address,
     a.postal_code AS zip_code,
-    a.phone,
     city.city,
     country.country,
         CASE

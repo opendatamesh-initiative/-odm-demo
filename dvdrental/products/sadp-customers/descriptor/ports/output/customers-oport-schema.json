@@ -1,0 +1,49 @@
+{
+  "$id": "http://opendatamesh.org/dp_customers.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Customer",
+  "type": "object",
+
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "The customer's identifier."
+    },
+    "firstName": {
+      "type": "string",
+      "description": "The customer's first name."
+    },
+    "lastName": {
+      "type": "string",
+      "description": "The customer's last name."
+    },
+    "phone": {
+      "type": "string",
+      "description": "The customer's primary phone number."
+    },
+    "address": {
+      "type": "string",
+      "description": "The customer's residential address."
+    },
+    "zip_code": {
+      "type": "string",
+      "description": "The customer's residential postal code."
+    },
+    "city": {
+      "type": "string",
+      "description": "The customer's residential city."
+    },
+    "country": {
+      "type": "string",
+      "description": "The customer's residential country."
+    },
+    "notes": {
+      "type": "string",
+      "description": "The customer's state. It is equal to activeif the customer did at leat one rental in the past 6 months"
+    },
+    "sid": {
+      "type": "string",
+      "description": "The customer's preferred store's identifier."
+    }
+  }
+}
