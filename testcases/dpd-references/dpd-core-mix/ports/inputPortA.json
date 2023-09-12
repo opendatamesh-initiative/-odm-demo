@@ -9,7 +9,8 @@
         "servicesType": "rest-services",
         "api": {
             "$ref": "#components/apis/restApi1"
-        }
+        },
+        "x-prop":"x-prop-value"
     },
     "x-prop":"x-prop-value"
 }
