@@ -9,7 +9,8 @@
         "servicesType": "rest-services",
         "api": {
             "$ref": "restApi1.json"
-        }
+        },
+        "x-prop":"x-prop-value"
     },
     "x-prop":"x-prop-value"
 }
