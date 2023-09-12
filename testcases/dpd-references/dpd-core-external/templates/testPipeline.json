@@ -1,0 +1,9 @@
+{
+    "name": "testPipeline",
+    "version": "1.0.0",
+    "specification": "azure-devops",
+    "specificationVersion": "1.0.0",
+    "definition": {
+        "$ref": "testPipelineDef.json"
+    }
+}
