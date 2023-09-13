@@ -4,7 +4,7 @@
   "info": {
     "x-prop":"x-prop-value", 
     "name": "dpdCore",
-    "version": "0.9.0",
+    "version": "1.0.0",
     "displayName": "Test Product",
     "description": "This is a test product that contains the core configurations blocks",
     "domain": "testDomain",
