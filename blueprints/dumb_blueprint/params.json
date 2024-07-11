@@ -1,0 +1,27 @@
+[
+  {
+    "name": "fqn",
+    "description": "Fully Qualified Name (FQN) that uniquely identifies the data product.",
+    "defaultValue": "urn:dpds:orm.opendatamesh:dataproducts:dpdMinimal"
+  },
+  {
+    "name": "name",
+    "description": "The name of the data product.",
+    "defaultValue": "dpdMinimal"
+  },
+  {
+    "name": "domain",
+    "description": "The domain within which the data product exists.",
+    "defaultValue": "testDomain"
+  },
+  {
+    "name": "version",
+    "description": "The version number of the data product.",
+    "defaultValue": "1.0.0"
+  },
+  {
+    "name": "owner",
+    "description": "The owner or responsible party for the data product.",
+    "defaultValue": "john.doe@company-xyz.com"
+  }
+]
