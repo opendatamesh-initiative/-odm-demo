@@ -1,0 +1,16 @@
+{
+  "dataProductDescriptor": "1.0.0",
+  "info": {
+    "fullyQualifiedName": "${fqn}",
+    "name": "${name}",
+    "version": "${version}",
+    "domain": "${domain}",
+    "owner": {
+      "id": "${owner}"
+    }
+  },
+
+  "interfaceComponents": {
+    "outputPorts": []
+  }
+}
