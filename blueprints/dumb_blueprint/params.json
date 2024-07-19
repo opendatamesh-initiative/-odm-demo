@@ -19,7 +19,11 @@
     "description": "Fully Qualified Name (FQN) that uniquely identifies the data product.",
     "defaultValue": ""
   },
-  { "name": "BD_description", "description": "", "defaultValue": "" },
+  {
+    "name": "BD_description",
+    "description": "A brief description of the data product.",
+    "defaultValue": ""
+  },
   {
     "name": "BD_version",
     "description": "The version number of the data product.",
