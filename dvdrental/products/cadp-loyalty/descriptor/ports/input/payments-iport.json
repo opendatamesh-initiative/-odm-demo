@@ -1,0 +1,5 @@
+{
+    "name": "paymentsInput",
+    "version": "1.0.0", 
+    "dependsOn": "dataproducts:payments:1.0.0"
+}

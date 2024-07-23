@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package com.dvdrental.crm;
+
+import "schemata/protobuf/schemata.proto";
+
+option java_package = "com.dvdrental.schema.crm.rfm";
+option java_outer_classname = "Rfm";
+
+message Rfm {
+  option(org.schemata.schema.message_core).description = "loyalty table";
+  option(org.schemata.schema.message_core).comment = "The table that store rfm metrics";
+  option(org.schemata.schema.schema_type) = ENTITY;
+
+  int32 customer_id = 1 [
+    (org.schemata.schema.field_core).description = "Identifier of the customer"
+    , (org.schemata.schema.is_primary_key) = true
+  ];
+
+  string name = 2 [
+    (org.schemata.schema.field_core).description = "Full name of the customer"
+  ];
+
+  string country = 3 [
+    (org.schemata.schema.field_core).description = "Country of the customer"
+  ];
+
+  string status = 4 [
+    (org.schemata.schema.field_core).description = "Customer status. Equals to active if the customer have an active rental card. Empty otherwise"
+  ];
+
+  string last_payment_date = 5 [
+    (org.schemata.schema.field_core).description = "The date of the last payment made by the customer"
+    , (org.schemata.schema.product_type) = "YYYY-MM-DD hh:mm:ss"
+  ];
+
+  int32 tot_payment_number = 6 [
+    (org.schemata.schema.field_core).description = "Total number of payments made by the customer in the tracked period"
+  ];
+
+  int32 tot_payment_amount = 7 [
+    (org.schemata.schema.field_core).description = "Total amount spent by the customer in the tracked period"
+  ];
+
+  int32 rfm_recency = 8 [
+    (org.schemata.schema.field_core).description = "Customer's recency bucket calculated over `last_payment_date`"
+  ];
+
+  int32 rfm_frequency = 9 [
+    (org.schemata.schema.field_core).description = "Customer's frequency bucket calculated over `tot_payment_number`"
+  ];
+
+  int32 rfm_monetary = 10 [
+    (org.schemata.schema.field_core).description = "Customer's monetary bucket calculated over `tot_payment_amount`"
+  ];
+
+  int32 rfm = 11 [
+    (org.schemata.schema.field_core).description = "RFM score"
+  ];
+
+  string segment = 12 [
+    (org.schemata.schema.field_core).description = "Customer classification calculated over `rfm`"
+  ];
+}

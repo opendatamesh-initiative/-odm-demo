@@ -1,0 +1,5 @@
+{
+    "name": "dvdrentalInput",
+    "version": "1.0.0", 
+    "dependsOn": "sourcesystems:dvdrentaldb"
+}
